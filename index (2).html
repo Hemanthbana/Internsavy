@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="margin:0px;">
+    <div>
+        <div>
+            <div id="signupdiv">
+                <h2>Success</h2>
+                <p>Your sign-up is completed login again</p>
+            </div>
+            <form id="loginform">
+                <h2>Sign-up</h2>
+                <div id="formdivmain" >
+                    <div id="inputdiv">
+                        <label></label>
+                        <input class="inputcls" type="text" name="Fname" placeholder="Enter Your First Name">
+                    </div>
+                    <div>
+                        <label></label>
+                        <input class="inputcls" type="text" name="Fname" placeholder="Enter Your last Name">
+                    </div>
+                    <div>
+                        <label></label>
+                        <input class="inputcls" type="text" name="Fname" placeholder="Phone Number">
+                    </div>
+                    <div>
+                        <label></label>
+                        <input class="inputcls" type="text" name="Fname" placeholder="Email address">
+                    </div>
+                    <div>
+                        <label></label>
+                        <input class="inputcls" type="text" name="Fname" placeholder="Country">
+                    </div>
+                </div>
+                <button class="formbtn" onclick="signUp()"> Submit </button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="script.js">
+    function signUp(){
+    document.querySelector("#loginform").style.visibility="hidden";
+    document.querySelector("#signupdiv").style.visibility="visible";
+}
+</script>
+</html>
